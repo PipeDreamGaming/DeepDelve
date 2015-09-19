@@ -31,7 +31,9 @@ GetComponentInChildren(Animator).ResetTrigger("isMoving");
 }
 
 if(isDodging)
-transform.position=Mathf
+transform.position=Vector3.Lerp(transform.position, Vector3(0,0,0), dodgeTime);
+
+
 upDown*=speed;
 leftRight*=speed;
 
